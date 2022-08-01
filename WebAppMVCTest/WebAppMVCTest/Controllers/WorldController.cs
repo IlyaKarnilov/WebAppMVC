@@ -11,4 +11,9 @@ public class WorldController : Controller
         DogViewModel doggi = new DogViewModel() {Name = "Jefri", Age = 5};    
         return View(doggi);
     }
+
+    public IActionResult Create()
+    {
+        return View();
+    }
 }
