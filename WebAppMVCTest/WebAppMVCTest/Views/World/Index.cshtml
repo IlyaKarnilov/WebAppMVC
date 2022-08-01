@@ -1,7 +1,6 @@
-﻿@{
-    ViewData["Title"] = "World";
-}
+﻿@model WebAppMVCTest.Models.DogViewModel
 
 <div class="text-center">
-    <h1 class="display-4">Welcome to new world</h1>
+    <h1 class="display-4">Hello, it @Model.Name doggo</h1>
+    <h4>This doggo @Model.Age years </h4>
 </div>
