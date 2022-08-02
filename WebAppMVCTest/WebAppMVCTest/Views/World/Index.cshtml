@@ -1,6 +1,11 @@
-﻿@model WebAppMVCTest.Models.DogViewModel
+﻿@model List<WebAppMVCTest.Models.DogViewModel>
 
 <div class="text-center">
-    <h1 class="display-4">Hello, it @Model.Name doggo</h1>
-    <h4>This doggo @Model.Age years </h4>
+    <ul>
+        @foreach(var dog in Model){
+             <li class="display-4">it`s @dog.Name (@dog.Age) doggo</li>
+        }   
+    </ul>
+    
+    
 </div>
